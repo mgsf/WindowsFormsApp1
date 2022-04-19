@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+<p>Through this page we can send messages to C# application</p>
+<input id="txt" type="text">
+
+<button onclick="SendMessage()">Send Message</button>
+
+<p id="demo"></p>
+
+<script>
+function SendMessage() 
+{
+	 var val = document.getElementById("txt").value;
+	 window.chrome.webview.postMessage(val);	 
+}
+
+function MessageReceived(Message)
+{
+   alert('HTML Page Popup :'+Message);
+}
+</script>
+
+</body>
+</html>
