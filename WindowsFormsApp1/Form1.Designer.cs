@@ -34,6 +34,7 @@ namespace WindowsFormsApp1
             this.Sendmsg = new System.Windows.Forms.Button();
             this.txtSendmsg = new System.Windows.Forms.TextBox();
             this.lblRecivmsg = new System.Windows.Forms.Label();
+            this.btnShowChild = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.webView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,15 +86,26 @@ namespace WindowsFormsApp1
             this.lblRecivmsg.AutoSize = true;
             this.lblRecivmsg.Location = new System.Drawing.Point(874, 62);
             this.lblRecivmsg.Name = "lblRecivmsg";
-            this.lblRecivmsg.Size = new System.Drawing.Size(46, 17);
+            this.lblRecivmsg.Size = new System.Drawing.Size(44, 16);
             this.lblRecivmsg.TabIndex = 4;
             this.lblRecivmsg.Text = "label1";
+            // 
+            // btnShowChild
+            // 
+            this.btnShowChild.Location = new System.Drawing.Point(1087, 51);
+            this.btnShowChild.Name = "btnShowChild";
+            this.btnShowChild.Size = new System.Drawing.Size(127, 38);
+            this.btnShowChild.TabIndex = 5;
+            this.btnShowChild.Text = "ShowChild";
+            this.btnShowChild.UseVisualStyleBackColor = true;
+            this.btnShowChild.Click += new System.EventHandler(this.btnShowChild_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1468, 843);
+            this.Controls.Add(this.btnShowChild);
             this.Controls.Add(this.lblRecivmsg);
             this.Controls.Add(this.txtSendmsg);
             this.Controls.Add(this.Sendmsg);
@@ -115,6 +127,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button Sendmsg;
         private System.Windows.Forms.TextBox txtSendmsg;
         private System.Windows.Forms.Label lblRecivmsg;
+        private System.Windows.Forms.Button btnShowChild;
     }
 }
 

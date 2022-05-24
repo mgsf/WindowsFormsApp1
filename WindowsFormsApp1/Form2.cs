@@ -16,5 +16,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btnCallParent_Click(object sender, EventArgs e)
+        {
+            Form1 parent = (Form1)this.Owner;
+            parent.NotifyMe("Come On Girls");
+        }
     }
 }

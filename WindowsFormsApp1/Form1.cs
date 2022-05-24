@@ -39,5 +39,16 @@ namespace WindowsFormsApp1
         {
             lblRecivmsg.Text = e.TryGetWebMessageAsString();
         }
+
+        private void btnShowChild_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2();
+            frm2.ShowDialog(this);
+        }
+
+        public void NotifyMe(string s)
+        {
+            MessageBox.Show(s);
+        }
     }
 }

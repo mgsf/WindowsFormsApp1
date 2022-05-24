@@ -29,12 +29,33 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnCallParent = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnCallParent
+            // 
+            this.btnCallParent.Location = new System.Drawing.Point(394, 128);
+            this.btnCallParent.Name = "btnCallParent";
+            this.btnCallParent.Size = new System.Drawing.Size(119, 44);
+            this.btnCallParent.TabIndex = 0;
+            this.btnCallParent.Text = "Call Parent";
+            this.btnCallParent.UseVisualStyleBackColor = true;
+            this.btnCallParent.Click += new System.EventHandler(this.btnCallParent_Click);
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCallParent);
+            this.Name = "Form2";
             this.Text = "Form2";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCallParent;
     }
 }
